@@ -26,6 +26,8 @@
       <%= link_to refinery_icon_tag('application_go.png'), page.url,
                   :target => "_blank",
                   :title => t('.view_live_html') %>
+      <%= link_to refinery_icon_tag('page_add.png'), new_admin_page_path(:parent_id => page.id),
+                  :title => t('new', :scope => 'refinery.admin.pages') %>
       <%= link_to refinery_icon_tag('application_edit.png'), edit_admin_page_path(page),
                   :class => 'edit',
                   :title => t('edit', :scope => 'admin.pages') %>

@@ -16,7 +16,7 @@ module Admin
     }
 
     def new
-      @page = Page.new
+      @page = Page.new(params)
       Page.default_parts.each_with_index do |page_part, index|
         @page.parts << PagePart.new(:title => page_part, :position => index)
       end
