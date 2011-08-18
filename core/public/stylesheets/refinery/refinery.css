@@ -667,6 +667,11 @@ label.stripped {
   display: block;
   line-height: 28px;
 }
+#records.tree .title {
+  display: block;
+  margin: 0 120px 0 20px;
+  cursor: pointer;
+}
 #records.tree .actions {
   line-height: 22px;
   top: 1px;
@@ -694,6 +699,13 @@ label.stripped {
   vertical-align: middle;
   padding: 2px 4px 4px 4px;
 }
+
+#records.tree .title {
+  display: block;
+  margin: 0 120px 0 20px;
+  cursor: pointer;
+}
+
 #records.tree .actions a img {
   padding-top: 4px;
 }
@@ -705,11 +717,11 @@ label.stripped {
   height: 16px;
   margin: 3px 3px 0 0;
   background: url('/images/refinery/icons/page.png') center center no-repeat;
-  cursor: pointer;
 }
 
 #records.tree li span.icon.toggle {
   background-image: url('/images/refinery/icons/folder.png');
+  cursor: pointer;
 }
 
 #records.tree li span.icon.toggle.expanded {
